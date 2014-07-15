@@ -12,6 +12,8 @@
 
 @interface akm0012_DetailViewController ()
 - (void)configureView;
+@property (weak, nonatomic) IBOutlet UIDatePicker *date_picker;
+
 @end
 
 @implementation akm0012_DetailViewController
@@ -39,6 +41,13 @@
         self.comic_illustrator.text = [self.detailItem objectForKey:@"comic_illustrator"];
         self.comic_inker.text = [self.detailItem objectForKey:@"comic_inker"];
         self.comic_publisher.text = [self.detailItem objectForKey:@"comic_publisher"];
+        
+        // Get the date from the dict if it's there
+        NSDate *comic_date = [self.detailItem objectForKey:@"comic_date"];
+        
+        if (comic_date != nil) {
+            [self.date_picker setDate:comic_date];
+        }
     }
 }
 
@@ -50,6 +59,9 @@
     
     // This will cause the label to be updated with the correct text
     self.comic_title.text = [self.detailItem objectForKey:@"comic_title"];
+    
+    // This will allow me to execute some code when the Date Picker has been edited
+    [_date_picker addTarget:self action:@selector(dateChanged:) forControlEvents:UIControlEventValueChanged];
 }
 
 - (void)didReceiveMemoryWarning
@@ -90,6 +102,15 @@
         default:
             break;
     }
+    
+}
+
+// This will save the date into our dict. after the picker has been edited
+- (void) dateChanged:(id)sender {
+    
+    NSDate *comic_date_selected = [self.date_picker date];
+    
+    [self.detailItem setObject:comic_date_selected forKey:@"comic_date"];
     
 }
 

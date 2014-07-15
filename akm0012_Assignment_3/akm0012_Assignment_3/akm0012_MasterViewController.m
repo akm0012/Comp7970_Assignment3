@@ -14,6 +14,7 @@
 
 @interface akm0012_MasterViewController () {
     
+//    __weak IBOutlet UILabel *issue_num_label;
     NSMutableArray *_comic_book_list;
 }
 @end
@@ -46,6 +47,7 @@
     // This is where the add button gets "added"
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -91,6 +93,7 @@
 
     NSMutableDictionary *my_comic_object = _comic_book_list[indexPath.row];
     cell.textLabel.text = [my_comic_object objectForKey:@"comic_title"];
+    cell.detailTextLabel.text = [my_comic_object objectForKey:@"comic_issue_num"];
     return cell;
 }
 

@@ -10,10 +10,10 @@
 
 @interface akm0012_DetailViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UITextField *detailText;
+@property (weak, nonatomic) IBOutlet UITextField *comic_title;
 
 @property (strong, nonatomic) id detailItem;
 
-- (IBAction)detailTextChanged:(UITextField *)sender;
+- (IBAction)comic_details_changed:(UITextField *)sender;
 
 @end

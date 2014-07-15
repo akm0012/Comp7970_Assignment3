@@ -12,7 +12,7 @@
 
 @interface akm0012_MasterViewController () {
     
-    NSMutableArray *_objects;
+    NSMutableArray *_comic_book_list;
 }
 @end
 
@@ -35,8 +35,11 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    // This could be useful to implement delete
+    // This is where we add the delete button
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    
+    // This will set the edit button's text to "Delete"
+    self.editButtonItem.title = @"Delete";
 
     // This is where the add button gets "added"
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
@@ -53,14 +56,14 @@
 - (void)insertNewObject:(id)sender
 {
     // If the list does not exsist, make one
-    if (!_objects) {
-        _objects = [[NSMutableArray alloc] init];
+    if (!_comic_book_list) {
+        _comic_book_list = [[NSMutableArray alloc] init];
     }
     
-    NSMutableDictionary *myDict = [[NSMutableDictionary alloc] init];
-    [myDict setObject:@"blah" forKey:@"text"];
+    NSMutableDictionary *my_comic = [[NSMutableDictionary alloc] init];
+    [my_comic setObject:@"New Comic" forKey:@"comic_title"];
     
-    [_objects insertObject:myDict atIndex:0];
+    [_comic_book_list insertObject:my_comic atIndex:0];
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
     
@@ -77,15 +80,15 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _objects.count;
+    return _comic_book_list.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
-    NSMutableDictionary *myDict_object = _objects[indexPath.row];
-    cell.textLabel.text = [myDict_object objectForKey:@"text"];
+    NSMutableDictionary *my_comic_object = _comic_book_list[indexPath.row];
+    cell.textLabel.text = [my_comic_object objectForKey:@"comic_title"];
     return cell;
 }
 
@@ -98,7 +101,7 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [_objects removeObjectAtIndex:indexPath.row];
+        [_comic_book_list removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
@@ -125,8 +128,24 @@
 {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSMutableDictionary *object = _objects[indexPath.row];
+        NSMutableDictionary *object = _comic_book_list[indexPath.row];
         [[segue destinationViewController] setDetailItem:object];
+    }
+}
+
+// This is used to make sure the edit button's text stays to "Delete" and "Cancel"
+- (void)setEditing:(BOOL)editing animated:(BOOL)animated
+{
+    // Make sure you call super first
+    [super setEditing:editing animated:animated];
+    
+    if (editing)
+    {
+        self.editButtonItem.title = NSLocalizedString(@"Cancel", @"Cancel");
+    }
+    else
+    {
+        self.editButtonItem.title = NSLocalizedString(@"Delete", @"Delete");
     }
 }
 

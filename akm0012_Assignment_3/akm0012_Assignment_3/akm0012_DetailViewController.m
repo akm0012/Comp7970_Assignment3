@@ -31,7 +31,7 @@
     // Update the user interface for the detail item.
 
     if (self.detailItem) {
-        self.detailText.text = [self.detailItem objectForKey:@"text"];
+        self.comic_title.text = [self.detailItem objectForKey:@"comic_title"];
     }
 }
 
@@ -42,7 +42,7 @@
     [self configureView];
     
     // This will cause the label to be updated with the correct text
-    self.detailText.text = [self.detailItem objectForKey:@"text"];
+    self.comic_title.text = [self.detailItem objectForKey:@"comic_title"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -51,7 +51,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)detailTextChanged:(UITextField *)sender {
-    [self.detailItem setObject:sender.text forKey:@"text"];
+// This is called whenever the user is done editing a comic book's details
+- (IBAction)comic_details_changed:(UITextField *)sender {
+    
+    [self.detailItem setObject:sender.text forKey:@"comic_title"];
 }
 @end

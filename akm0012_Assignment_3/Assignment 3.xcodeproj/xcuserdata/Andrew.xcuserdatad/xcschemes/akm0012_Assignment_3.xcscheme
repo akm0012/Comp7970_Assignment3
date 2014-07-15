@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "494C0D881974C2C40067484A"
                BuildableName = "akm0012_Assignment_3.app"
-               BlueprintName = "akm0012_Assignment_3"
-               ReferencedContainer = "container:akm0012_Assignment_3.xcodeproj">
+               BlueprintName = "Assignment 3"
+               ReferencedContainer = "container:Assignment 3.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "494C0DAC1974C2C50067484A"
                BuildableName = "akm0012_Assignment_3Tests.xctest"
-               BlueprintName = "akm0012_Assignment_3Tests"
-               ReferencedContainer = "container:akm0012_Assignment_3.xcodeproj">
+               BlueprintName = "Assignment 3Tests"
+               ReferencedContainer = "container:Assignment 3.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "494C0D881974C2C40067484A"
             BuildableName = "akm0012_Assignment_3.app"
-            BlueprintName = "akm0012_Assignment_3"
-            ReferencedContainer = "container:akm0012_Assignment_3.xcodeproj">
+            BlueprintName = "Assignment 3"
+            ReferencedContainer = "container:Assignment 3.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "494C0D881974C2C40067484A"
             BuildableName = "akm0012_Assignment_3.app"
-            BlueprintName = "akm0012_Assignment_3"
-            ReferencedContainer = "container:akm0012_Assignment_3.xcodeproj">
+            BlueprintName = "Assignment 3"
+            ReferencedContainer = "container:Assignment 3.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,8 +81,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "494C0D881974C2C40067484A"
             BuildableName = "akm0012_Assignment_3.app"
-            BlueprintName = "akm0012_Assignment_3"
-            ReferencedContainer = "container:akm0012_Assignment_3.xcodeproj">
+            BlueprintName = "Assignment 3"
+            ReferencedContainer = "container:Assignment 3.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -1,6 +1,8 @@
+//  Author: Andrew K. Marshall
+//  Last Revision: 7/14/14
+//  COMP 7970: Assignment 3
 //
 //  akm0012_DetailViewController.m
-//  akm0012_Assignment_3
 //
 //  Created by Andrew Marshall on 7/14/14.
 //  Copyright (c) 2014 Comp_7970_akm0012. All rights reserved.
@@ -32,6 +34,11 @@
 
     if (self.detailItem) {
         self.comic_title.text = [self.detailItem objectForKey:@"comic_title"];
+        self.comic_issue_num.text = [self.detailItem objectForKey:@"comic_issue_num"];
+        self.comic_writer.text = [self.detailItem objectForKey:@"comic_writer"];
+        self.comic_illustrator.text = [self.detailItem objectForKey:@"comic_illustrator"];
+        self.comic_inker.text = [self.detailItem objectForKey:@"comic_inker"];
+        self.comic_publisher.text = [self.detailItem objectForKey:@"comic_publisher"];
     }
 }
 
@@ -52,8 +59,49 @@
 }
 
 // This is called whenever the user is done editing a comic book's details
+// I used tags to identify what text field has been edited
 - (IBAction)comic_details_changed:(UITextField *)sender {
     
-    [self.detailItem setObject:sender.text forKey:@"comic_title"];
+    switch (sender.tag) {
+        case 1:
+            [self.detailItem setObject:sender.text forKey:@"comic_title"];
+            break;
+            
+        case 2:
+            [self.detailItem setObject:sender.text forKey:@"comic_issue_num"];
+            break;
+            
+        case 3:
+            [self.detailItem setObject:sender.text forKey:@"comic_writer"];
+            break;
+            
+        case 4:
+            [self.detailItem setObject:sender.text forKey:@"comic_illustrator"];
+            break;
+            
+        case 5:
+            [self.detailItem setObject:sender.text forKey:@"comic_inker"];
+            break;
+            
+        case 6:
+            [self.detailItem setObject:sender.text forKey:@"comic_publisher"];
+            break;
+            
+        default:
+            break;
+    }
+    
+}
+
+// This will make any keyboard disapear when you tap the background.
+- (IBAction)backgroundTap:(id)sender {
+    [self.comic_title resignFirstResponder];
+    [self.comic_issue_num resignFirstResponder];
+    [self.comic_writer resignFirstResponder];
+    [self.comic_illustrator resignFirstResponder];
+    [self.comic_inker resignFirstResponder];
+    [self.comic_publisher resignFirstResponder];
+
+    
 }
 @end

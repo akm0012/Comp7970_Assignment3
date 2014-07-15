@@ -35,14 +35,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		494C0D891974C2C40067484A /* akm0012_Assignment_3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = akm0012_Assignment_3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		494C0D891974C2C40067484A /* Assignment 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Assignment 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		494C0D8C1974C2C40067484A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		494C0D8E1974C2C40067484A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		494C0D901974C2C40067484A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		494C0D941974C2C40067484A /* akm0012_Assignment_3-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "akm0012_Assignment_3-Info.plist"; sourceTree = "<group>"; };
+		494C0D941974C2C40067484A /* Assignment 3-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Assignment 3-Info.plist"; sourceTree = "<group>"; };
 		494C0D961974C2C40067484A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		494C0D981974C2C40067484A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		494C0D9A1974C2C50067484A /* akm0012_Assignment_3-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "akm0012_Assignment_3-Prefix.pch"; sourceTree = "<group>"; };
+		494C0D9A1974C2C50067484A /* Assignment 3-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Assignment 3-Prefix.pch"; sourceTree = "<group>"; };
 		494C0D9B1974C2C50067484A /* akm0012_AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = akm0012_AppDelegate.h; sourceTree = "<group>"; };
 		494C0D9C1974C2C50067484A /* akm0012_AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = akm0012_AppDelegate.m; sourceTree = "<group>"; };
 		494C0D9F1974C2C50067484A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,9 +51,9 @@
 		494C0DA41974C2C50067484A /* akm0012_DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = akm0012_DetailViewController.h; sourceTree = "<group>"; };
 		494C0DA51974C2C50067484A /* akm0012_DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = akm0012_DetailViewController.m; sourceTree = "<group>"; };
 		494C0DA71974C2C50067484A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		494C0DAD1974C2C50067484A /* akm0012_Assignment_3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = akm0012_Assignment_3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		494C0DAD1974C2C50067484A /* Assignment 3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Assignment 3Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		494C0DAE1974C2C50067484A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		494C0DB61974C2C50067484A /* akm0012_Assignment_3Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "akm0012_Assignment_3Tests-Info.plist"; sourceTree = "<group>"; };
+		494C0DB61974C2C50067484A /* Assignment 3Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Assignment 3Tests-Info.plist"; sourceTree = "<group>"; };
 		494C0DB81974C2C50067484A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		494C0DBA1974C2C50067484A /* akm0012_Assignment_3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = akm0012_Assignment_3Tests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,8 +95,8 @@
 		494C0D8A1974C2C40067484A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				494C0D891974C2C40067484A /* akm0012_Assignment_3.app */,
-				494C0DAD1974C2C50067484A /* akm0012_Assignment_3Tests.xctest */,
+				494C0D891974C2C40067484A /* Assignment 3.app */,
+				494C0DAD1974C2C50067484A /* Assignment 3Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,10 +131,10 @@
 		494C0D931974C2C40067484A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				494C0D941974C2C40067484A /* akm0012_Assignment_3-Info.plist */,
+				494C0D941974C2C40067484A /* Assignment 3-Info.plist */,
 				494C0D951974C2C40067484A /* InfoPlist.strings */,
 				494C0D981974C2C40067484A /* main.m */,
-				494C0D9A1974C2C50067484A /* akm0012_Assignment_3-Prefix.pch */,
+				494C0D9A1974C2C50067484A /* Assignment 3-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -151,7 +151,7 @@
 		494C0DB51974C2C50067484A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				494C0DB61974C2C50067484A /* akm0012_Assignment_3Tests-Info.plist */,
+				494C0DB61974C2C50067484A /* Assignment 3Tests-Info.plist */,
 				494C0DB71974C2C50067484A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -160,9 +160,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		494C0D881974C2C40067484A /* akm0012_Assignment_3 */ = {
+		494C0D881974C2C40067484A /* Assignment 3 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 494C0DBE1974C2C50067484A /* Build configuration list for PBXNativeTarget "akm0012_Assignment_3" */;
+			buildConfigurationList = 494C0DBE1974C2C50067484A /* Build configuration list for PBXNativeTarget "Assignment 3" */;
 			buildPhases = (
 				494C0D851974C2C40067484A /* Sources */,
 				494C0D861974C2C40067484A /* Frameworks */,
@@ -172,14 +172,14 @@
 			);
 			dependencies = (
 			);
-			name = akm0012_Assignment_3;
+			name = "Assignment 3";
 			productName = akm0012_Assignment_3;
-			productReference = 494C0D891974C2C40067484A /* akm0012_Assignment_3.app */;
+			productReference = 494C0D891974C2C40067484A /* Assignment 3.app */;
 			productType = "com.apple.product-type.application";
 		};
-		494C0DAC1974C2C50067484A /* akm0012_Assignment_3Tests */ = {
+		494C0DAC1974C2C50067484A /* Assignment 3Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 494C0DC11974C2C50067484A /* Build configuration list for PBXNativeTarget "akm0012_Assignment_3Tests" */;
+			buildConfigurationList = 494C0DC11974C2C50067484A /* Build configuration list for PBXNativeTarget "Assignment 3Tests" */;
 			buildPhases = (
 				494C0DA91974C2C50067484A /* Sources */,
 				494C0DAA1974C2C50067484A /* Frameworks */,
@@ -190,9 +190,9 @@
 			dependencies = (
 				494C0DB31974C2C50067484A /* PBXTargetDependency */,
 			);
-			name = akm0012_Assignment_3Tests;
+			name = "Assignment 3Tests";
 			productName = akm0012_Assignment_3Tests;
-			productReference = 494C0DAD1974C2C50067484A /* akm0012_Assignment_3Tests.xctest */;
+			productReference = 494C0DAD1974C2C50067484A /* Assignment 3Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -210,7 +210,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 494C0D841974C2C40067484A /* Build configuration list for PBXProject "akm0012_Assignment_3" */;
+			buildConfigurationList = 494C0D841974C2C40067484A /* Build configuration list for PBXProject "Assignment 3" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -223,8 +223,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				494C0D881974C2C40067484A /* akm0012_Assignment_3 */,
-				494C0DAC1974C2C50067484A /* akm0012_Assignment_3Tests */,
+				494C0D881974C2C40067484A /* Assignment 3 */,
+				494C0DAC1974C2C50067484A /* Assignment 3Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -275,7 +275,7 @@
 /* Begin PBXTargetDependency section */
 		494C0DB31974C2C50067484A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 494C0D881974C2C40067484A /* akm0012_Assignment_3 */;
+			target = 494C0D881974C2C40067484A /* Assignment 3 */;
 			targetProxy = 494C0DB21974C2C50067484A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -381,12 +381,11 @@
 		494C0DBF1974C2C50067484A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "akm0012_Assignment_3/akm0012_Assignment_3-Prefix.pch";
-				INFOPLIST_FILE = "akm0012_Assignment_3/akm0012_Assignment_3-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "akm0012_Assignment_3/Assignment 3-Prefix.pch";
+				INFOPLIST_FILE = "akm0012_Assignment_3/Assignment 3-Info.plist";
+				PRODUCT_NAME = "Assignment 3";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -394,12 +393,11 @@
 		494C0DC01974C2C50067484A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "akm0012_Assignment_3/akm0012_Assignment_3-Prefix.pch";
-				INFOPLIST_FILE = "akm0012_Assignment_3/akm0012_Assignment_3-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "akm0012_Assignment_3/Assignment 3-Prefix.pch";
+				INFOPLIST_FILE = "akm0012_Assignment_3/Assignment 3-Info.plist";
+				PRODUCT_NAME = "Assignment 3";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -419,8 +417,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "akm0012_Assignment_3Tests/akm0012_Assignment_3Tests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "akm0012_Assignment_3Tests/Assignment 3Tests-Info.plist";
+				PRODUCT_NAME = "Assignment 3Tests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -437,8 +435,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "akm0012_Assignment_3/akm0012_Assignment_3-Prefix.pch";
-				INFOPLIST_FILE = "akm0012_Assignment_3Tests/akm0012_Assignment_3Tests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "akm0012_Assignment_3Tests/Assignment 3Tests-Info.plist";
+				PRODUCT_NAME = "Assignment 3Tests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -447,7 +445,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		494C0D841974C2C40067484A /* Build configuration list for PBXProject "akm0012_Assignment_3" */ = {
+		494C0D841974C2C40067484A /* Build configuration list for PBXProject "Assignment 3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				494C0DBC1974C2C50067484A /* Debug */,
@@ -456,7 +454,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		494C0DBE1974C2C50067484A /* Build configuration list for PBXNativeTarget "akm0012_Assignment_3" */ = {
+		494C0DBE1974C2C50067484A /* Build configuration list for PBXNativeTarget "Assignment 3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				494C0DBF1974C2C50067484A /* Debug */,
@@ -464,7 +462,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		494C0DC11974C2C50067484A /* Build configuration list for PBXNativeTarget "akm0012_Assignment_3Tests" */ = {
+		494C0DC11974C2C50067484A /* Build configuration list for PBXNativeTarget "Assignment 3Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				494C0DC21974C2C50067484A /* Debug */,

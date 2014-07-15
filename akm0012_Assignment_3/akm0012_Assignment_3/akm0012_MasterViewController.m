@@ -1,5 +1,5 @@
 //  Author: Andrew K. Marshall
-//  Last Revision: 7/14/14
+//  Last Revision: 7/15/14
 //  COMP 7970: Assignment 3
 //
 //  akm0012_MasterViewController.m
@@ -14,7 +14,6 @@
 
 @interface akm0012_MasterViewController () {
     
-//    __weak IBOutlet UILabel *issue_num_label;
     NSMutableArray *_comic_book_list;
 }
 @end
@@ -33,6 +32,19 @@
     [super awakeFromNib];
 }
 
+// This will return the full pathname of our data file
+- (NSString *) dataFilePath
+{
+    // Search for the file
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    
+    // Get the document directory as a String
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    
+    return [documentsDirectory stringByAppendingPathComponent:@"comic_file.plist"];
+
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -48,13 +60,35 @@
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
     
+    // Create the back button found on the detail page
     UIBarButtonItem *newBackButton =
     [[UIBarButtonItem alloc] initWithTitle:@"Done"
                                      style:UIBarButtonItemStyleBordered
                                     target:nil
                                     action:nil];
     [[self navigationItem] setBackBarButtonItem:newBackButton];
+    
+    // Load the exsisting comic book list if one exsits
+    NSString *file_path = [self dataFilePath];
+    
+    if ([[NSFileManager defaultManager] fileExistsAtPath:file_path]) {
+    
+        _comic_book_list = [[NSMutableArray alloc] initWithContentsOfFile:file_path];
+        
+    }
+    
+    // We use this so our data will be saved when the app is terminated or sent to the background
+    UIApplication *app = [UIApplication sharedApplication];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationWillResignActive:) name:UIApplicationWillResignActiveNotification object:app];
+    
+}
 
+// This will save our comic book list if the app closes
+- (void) applicationWillResignActive:(NSNotification *) notification {
+    
+    NSString *file_path = [self dataFilePath];
+    
+    [_comic_book_list writeToFile:file_path atomically:YES];
     
 }
 

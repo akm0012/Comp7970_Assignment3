@@ -11,11 +11,19 @@
 #import "akm0012_DetailViewController.h"
 
 @interface akm0012_MasterViewController () {
+    
     NSMutableArray *_objects;
 }
 @end
 
 @implementation akm0012_MasterViewController
+
+// This will make the data propigate back
+- (void) viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    UITableView *view = (UITableView *)self.view;
+    [view reloadData];
+}
 
 - (void)awakeFromNib
 {
@@ -26,8 +34,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    // This could be useful to implement delete
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
+    // This is where the add button gets "added"
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
 }
@@ -38,14 +49,23 @@
     // Dispose of any resources that can be recreated.
 }
 
+// This is the code that runs when you push the add button
 - (void)insertNewObject:(id)sender
 {
+    // If the list does not exsist, make one
     if (!_objects) {
         _objects = [[NSMutableArray alloc] init];
     }
-    [_objects insertObject:[NSDate date] atIndex:0];
+    
+    NSMutableDictionary *myDict = [[NSMutableDictionary alloc] init];
+    [myDict setObject:@"blah" forKey:@"text"];
+    
+    [_objects insertObject:myDict atIndex:0];
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    
+    // This will make it automatically go to the edit screen when you press the add button
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
 }
 
 #pragma mark - Table View
@@ -64,8 +84,8 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
-    NSDate *object = _objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    NSMutableDictionary *myDict_object = _objects[indexPath.row];
+    cell.textLabel.text = [myDict_object objectForKey:@"text"];
     return cell;
 }
 
@@ -105,9 +125,29 @@
 {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = _objects[indexPath.row];
+        NSMutableDictionary *object = _objects[indexPath.row];
         [[segue destinationViewController] setDetailItem:object];
     }
 }
 
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

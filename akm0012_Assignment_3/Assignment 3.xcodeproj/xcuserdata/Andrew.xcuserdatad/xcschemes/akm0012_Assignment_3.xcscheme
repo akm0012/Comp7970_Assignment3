@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "494C0D881974C2C40067484A"
-               BuildableName = "akm0012_Assignment_3.app"
+               BuildableName = "Assignment 3.app"
                BlueprintName = "Assignment 3"
                ReferencedContainer = "container:Assignment 3.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "494C0DAC1974C2C50067484A"
-               BuildableName = "akm0012_Assignment_3Tests.xctest"
+               BuildableName = "Assignment 3Tests.xctest"
                BlueprintName = "Assignment 3Tests"
                ReferencedContainer = "container:Assignment 3.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "494C0D881974C2C40067484A"
-            BuildableName = "akm0012_Assignment_3.app"
+            BuildableName = "Assignment 3.app"
             BlueprintName = "Assignment 3"
             ReferencedContainer = "container:Assignment 3.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "494C0D881974C2C40067484A"
-            BuildableName = "akm0012_Assignment_3.app"
+            BuildableName = "Assignment 3.app"
             BlueprintName = "Assignment 3"
             ReferencedContainer = "container:Assignment 3.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "494C0D881974C2C40067484A"
-            BuildableName = "akm0012_Assignment_3.app"
+            BuildableName = "Assignment 3.app"
             BlueprintName = "Assignment 3"
             ReferencedContainer = "container:Assignment 3.xcodeproj">
          </BuildableReference>

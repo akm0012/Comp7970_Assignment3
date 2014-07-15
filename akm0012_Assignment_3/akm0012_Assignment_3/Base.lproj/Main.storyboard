@@ -86,8 +86,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" label=""/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 <connections>
+                                    <action selector="backgroundTap:" destination="Ah7-4n-0Wa" eventType="editingDidEndOnExit" id="FO2-bd-h3h"/>
                                     <action selector="comic_details_changed:" destination="Ah7-4n-0Wa" eventType="editingDidEnd" id="3Cw-3O-Y9R"/>
                                 </connections>
                             </textField>
@@ -146,8 +147,9 @@
                                 <rect key="frame" x="79" y="164" width="221" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 <connections>
+                                    <action selector="backgroundTap:" destination="Ah7-4n-0Wa" eventType="editingDidEndOnExit" id="TwN-4h-8fX"/>
                                     <action selector="comic_details_changed:" destination="Ah7-4n-0Wa" eventType="editingDidEnd" id="ep1-Su-Lst"/>
                                 </connections>
                             </textField>
@@ -155,8 +157,9 @@
                                 <rect key="frame" x="105" y="202" width="195" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 <connections>
+                                    <action selector="backgroundTap:" destination="Ah7-4n-0Wa" eventType="editingDidEndOnExit" id="pbd-nZ-dyL"/>
                                     <action selector="comic_details_changed:" destination="Ah7-4n-0Wa" eventType="editingDidEnd" id="lSw-ft-80h"/>
                                 </connections>
                             </textField>
@@ -164,8 +167,9 @@
                                 <rect key="frame" x="105" y="278" width="195" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 <connections>
+                                    <action selector="backgroundTap:" destination="Ah7-4n-0Wa" eventType="editingDidEndOnExit" id="NCK-G2-ctf"/>
                                     <action selector="comic_details_changed:" destination="Ah7-4n-0Wa" eventType="editingDidEnd" id="8aa-lv-Dcf"/>
                                 </connections>
                             </textField>
@@ -173,8 +177,9 @@
                                 <rect key="frame" x="71" y="240" width="229" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 <connections>
+                                    <action selector="backgroundTap:" destination="Ah7-4n-0Wa" eventType="editingDidEndOnExit" id="dNo-6h-rN6"/>
                                     <action selector="comic_details_changed:" destination="Ah7-4n-0Wa" eventType="editingDidEnd" id="c3v-ym-bjI"/>
                                 </connections>
                             </textField>
